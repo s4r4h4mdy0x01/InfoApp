@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_info/row_cir.dart';
+import 'package:my_info/Colors/color.dart';
+import 'package:my_info/widgets/row_cir.dart';
 
 
 class Products extends StatelessWidget {
@@ -18,16 +19,16 @@ class Products extends StatelessWidget {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children:  [
-               const Text(
+                Text(
                   'Description :',
-                  style: TextStyle(color: Colors.white60),
+                  style: TextStyle(color: isDark? widgitDark:widgitSunny),
                 ),
                 SizedBox(
                   width: 220,
                   height: 300,
                   child: Text(
                   description,
-                    style:  const TextStyle(color: Colors.white),
+                    style:   TextStyle(color: isDark? Colors.white:Colors.black87,),
                     maxLines: 6,
                     overflow: TextOverflow.ellipsis,
                   ),

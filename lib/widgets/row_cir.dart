@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:my_info/Colors/color.dart';
 
 class CreateRow extends StatelessWidget {
    CreateRow({super.key, required this.url, required this.text1, this.radius, this.fontSize , required this.text2});
@@ -27,7 +28,7 @@ class CreateRow extends StatelessWidget {
                     style: TextStyle(
                       fontSize: fontSize,
                       fontWeight: FontWeight.bold,
-                       color: Colors.white,
+                       color: isDark? Colors.white:Colors.black87,
         
         
                     ),
@@ -37,7 +38,7 @@ class CreateRow extends StatelessWidget {
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
                       fontSize: 20,
-                      color: Colors.grey,
+                      color: isDark? widgitDark:widgitSunny,
                       
                       
         

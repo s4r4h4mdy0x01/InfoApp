@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my_info/my_main_screen.dart';
+import 'package:my_info/screen/my_main_screen.dart';
+import 'package:my_info/screen/textfield.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
       
         primarySwatch: Colors.blue,
       ),
-      home:  const InfoApp(),
+      home:   Display(),
     );
   }
 }
